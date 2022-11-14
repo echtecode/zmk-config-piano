@@ -29,6 +29,7 @@
 #define SYS 5
 #define BT 6	
 #define AL2U 7
+#define AL1U 8
 / { 
     combos {
         compatible = "zmk,combos";
@@ -142,6 +143,12 @@
 		#binding-cells = <0>;
 		bindings = < &sl AL2U >;
 	};
+    caps_alpha1macro: behavior_macro_3 {
+		compatible = "zmk,behavior-macro";
+		label = "MACRO3";
+		#binding-cells = <0>;
+		bindings = < &sl AL1U >;
+	};
     };
 // 				0		1		2					3		4			5
 // 		6		7		8		9 					10		11			12 		13
@@ -153,7 +160,7 @@
 		bindings = <
 		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
 		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
-			 	 		 		&mt LC(LS(LALT)) SPC &kp LA(N1)  &caps_alpha2macro	&alpha2macro	 	
+			 	 		 		&mt LC(LS(LALT)) SPC &kp LA(N1)  &caps_alpha1macro	&alpha2macro	 	
 		>;
 		};
        		alpha2 {
@@ -208,6 +215,14 @@
 		bindings = <
 		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	
 		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
+			 	&trans 		&trans 			&trans	&none
+		>;
+		};
+
+        	alpha1cap {
+		bindings = <
+		 	 	&kp LS(L)	&kp LS(G)	&kp LS(D) 	 	&kp LS(H)    	&kp LS(U)	&kp LS(O)	
+		&kp LS(I) 	&kp LS(S) 	&kp LS(R)	&kp LS(T)		&kp LS(N)	&kp LS(E)	&kp LS(A)	&kp LS(C) 
 			 	&trans 		&trans 			&trans	&none
 		>;
 		};
