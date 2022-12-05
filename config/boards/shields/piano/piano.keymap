@@ -191,7 +191,7 @@
 		num {
 		bindings = <
 					&hm_l LCTL N1 	&hm_l LALT N2	&hm_l LGUI N3 		&hm_r RGUI N4 		&hm_r RALT N5		&hm_r RCTL N6	
-		&kp N0		&kp N7 			&kp N8			&kp N9				&kp ASTRK			&kp COMMA			&kp PLUS   		&kp EQUAL
+		&kp N0		&kp N7 			&kp N8			&kp N9				&kp ASTRK			&kp DOT				&kp PLUS   		&kp EQUAL
 							&sr LSHIFT AL1 			&kp LALT 			&trans 				&kp RGUI  	 
 		>;
 		};
