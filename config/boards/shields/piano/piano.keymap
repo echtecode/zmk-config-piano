@@ -198,33 +198,33 @@
 
 		sys {
 		bindings = <
-				 			&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)			&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			
-		&td LS(TAB) TAB		&td HOME DEL	&td END LG(V) 		&td LG(X) LG(C)		&td TAB LEFT  		&td LA(LS(DOWN)) DOWN 		&td LC(LG(LS(N4))) RIGHT 		&kp RET 
-		 			 		 				&sr LSHIFT AL1 		&none 				&kp RG(Z) 			&kp RGUI		
+				 			&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)			&td LG(V) LG(C) 			&td LC(LG(LS(N4))) UP 		&td Q BKSP 			
+		&td LS(TAB) TAB		&td HOME DEL	&td END LG(V) 		&td LG(X) LG(C)		&td LC(LG(LA(LEFT))) LEFT  	&td LA(LS(DOWN)) DOWN 		&td LC(LG(LA(RIGHT))) RIGHT 		&kp RET 
+		 			 		 				&sr LSHIFT AL1 		&none 				&kp RG(Z) 					&kp RGUI		
 		>;
 		};
 
 		bt {
 		bindings = <
-				&bt BT_PRV	&bt BT_NXT	&trans 			&trans 	&trans	&trans	
-		&bootloader  	&trans 		&trans 		&trans 			&trans 	&trans 	&trans	&bt BT_CLR
-		 	 	 				&to AL1	&none &none	&none
+						&bt BT_PRV		&bt BT_NXT		&trans 			&trans 		&trans		&trans	
+		&bootloader  	&trans 			&trans 			&trans 			&trans 		&trans 		&trans		&bt BT_CLR
+		 	 	 						&to AL1			&none 			&none		&none
 		>;
 		};
 
        		alpha2cap {
 		bindings = <
-		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp SQT		&kp LS(Z)	
-		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp DQT	&kp LS(X)	&kp LS(Y) 
-			 	&trans 		&trans 			&caps_alpha1macro	&none
+		 	 		&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    		&kp SQT				&kp LS(Z)	
+		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)			&kp DQT	&kp LS(X)	&kp LS(Y) 
+			 					&trans 		&trans 			&caps_alpha1macro	&none
 		>;
 		};
 
         	alpha1cap {
 		bindings = <
-		 	 	&kp LS(L)	&kp LS(G)	&kp LS(D) 	 	&kp LS(H)    	&kp LS(U)	&kp LS(O)	
-		&kp LS(I) 	&kp LS(S) 	&kp LS(R)	&kp LS(T)		&kp LS(N)	&kp LS(E)	&kp LS(A)	&kp LS(C) 
-			 	&trans 		&trans 			&trans	&none
+		 	 		&kp LS(L)	&kp LS(G)	&kp LS(D) 	 	&kp LS(H)    	&kp LS(U)	&kp LS(O)	
+		&kp LS(I) 	&kp LS(S) 	&kp LS(R)	&kp LS(T)		&kp LS(N)		&kp LS(E)	&kp LS(A)	&kp LS(C) 
+			 					&trans 		&trans 			&trans			&none
 		>;
 		};
         
