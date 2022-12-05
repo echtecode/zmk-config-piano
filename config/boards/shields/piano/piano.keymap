@@ -160,46 +160,47 @@
 		bindings = <
 		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
 		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
-			 	 		 		&mt LC(LS(LALT)) SPC &kp LA(N1)  &caps_alpha1macro	&alpha2macro	 	
+			 	 		 		&mt LC(LS(LALT)) SPC &kp LA(N1)  &kp RET	&alpha2macro	 	
 		>;
 		};
        		alpha2 {
 		bindings = <
-		 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT			&kp Z 		
+		 	 		&kp V 		&kp W		&kp M	 	 	&kp F    	&kp COMMA		&kp Z 		
 		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT			&kp X		&kp Y 
-			 	 		 		&sk LSHIFT 		&none &none &sl AL2U	
+			 	 		 		&sk LSHIFT 	&none 			&sl AL1U 	&sl AL2U	
 		>;
 		};
 		
        		sym1 {
 		bindings = <
-		 		&kp LA(N3)   	&kp LS(N3)	&kp DLLR	    	&kp LS(COMMA)	&kp LS(DOT)		&kp CARET	
-		&kp GRAVE	&kp TILDE 	&kp MINUS      	&kp BSLH	 	&kp LBKT	&kp RBKT	 	&kp PIPE 	&kp SLASH
-				  				&trans  		&trans		&trans  	&kp RGUI
+		 			&kp EXCL   			&kp AT			&kp HASH	    &kp LBRC		&kp RBRC		&kp COLON	
+		&kp TAB		&td LA(N2) DLLR		&kp PRCNT      	&kp CARET	 	&kp DOT			&kp AMPS	 	&kp SEMI 	&td UNDER MINUS
+				  						&kp LGUI  		&trans			&kp RET  		&kp RGUI
 		>;
 		};
+
 		sym2 {
 		bindings = <
-				&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))	&kp LPRN	&kp RPRN 	&kp SEMI 	
-		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   			&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		 		                &trans  &trans  &trans  &kp RGUI
+							&kp STAR		&kp LPAR	&kp RPAR		&kp LT			&kp GT 				&td SQT DQT
+		&td TILDE GRAVE  	&td BSLH PIPE	&kp LBKT	&kp RBKT   		&kp EQUAL  		&td FSLH QMARK		&kp MINUS		&kp UNDER 
+		 		                			&trans  	&trans  		&trans  		&kp RGUI
 
 		>;
 		};
 
 		num {
 		bindings = <
-				&hm_l LCTL DOT 	&hm_l LALT N0	&hm_l LGUI N1 		&hm_r RGUI N2 	&hm_r RALT N3		&hm_r RCTL N4	
-		&kp MINUS	&kp PLUS 	&kp N5		&kp N6			&kp N7		&kp N8			&kp N9   	&kp EQUAL
-							&sr LSHIFT AL1 		&kp LALT 		&trans 			&kp RGUI  	 
+					&hm_l LCTL N1 	&hm_l LALT N2	&hm_l LGUI N3 		&hm_r RGUI N4 		&hm_r RALT N5		&hm_r RCTL N6	
+		&kp N0		&kp N7 			&kp N8			&kp N9				&kp ASTRK			&kp COMMA			&kp PLUS   		&kp EQUAL
+							&sr LSHIFT AL1 			&kp LALT 			&trans 				&kp RGUI  	 
 		>;
 		};
 
 		sys {
 		bindings = <
-				 	&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			
-		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LC(LG(LS(N4))) RIGHT 	&kp RET 
-		 			 		 				&sr LSHIFT AL1 		&none &kp RG(Z) &kp RGUI		
+				 			&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)			&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			
+		&td LS(TAB) TAB		&td HOME DEL	&td END LG(V) 		&td LG(X) LG(C)		&td TAB LEFT  		&td LA(LS(DOWN)) DOWN 		&td LC(LG(LS(N4))) RIGHT 		&kp RET 
+		 			 		 				&sr LSHIFT AL1 		&none 				&kp RG(Z) 			&kp RGUI		
 		>;
 		};
 
@@ -213,9 +214,9 @@
 
        		alpha2cap {
 		bindings = <
-		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&trans		&kp LS(Z)	
-		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
-			 	&trans 		&trans 			&trans	&none
+		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp SQT		&kp LS(Z)	
+		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp DQT	&kp LS(X)	&kp LS(Y) 
+			 	&trans 		&trans 			&caps_alpha1macro	&none
 		>;
 		};
 
