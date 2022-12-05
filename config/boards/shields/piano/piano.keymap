@@ -175,7 +175,7 @@
 		bindings = <
 		 			&kp EXCL   			&kp AT			&kp HASH	    &kp LBRC		&kp RBRC		&kp COLON	
 		&kp TAB		&td LA(N2) DLLR		&kp PRCNT      	&kp CARET	 	&kp DOT			&kp AMPS	 	&kp SEMI 	&td UNDER MINUS
-				  						&kp LGUI  		&trans			&kp RET  		&kp RGUI
+				  						&kp LGUI  		&td LG(LA(I))	&kp RET  		&kp RGUI
 		>;
 		};
 
@@ -183,7 +183,7 @@
 		bindings = <
 							&kp STAR		&kp LPAR	&kp RPAR		&kp LT			&kp GT 				&td SQT DQT
 		&td TILDE GRAVE  	&td BSLH PIPE	&kp LBKT	&kp RBKT   		&kp EQUAL  		&td FSLH QMARK		&kp MINUS		&kp UNDER 
-		 		                			&trans  	&trans  		&trans  		&kp RGUI
+		 		                			&trans  	&td LG(LA(I))  	&kp RET  		&kp RGUI
 
 		>;
 		};
