@@ -160,14 +160,14 @@
 		bindings = <
 		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
 		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
-			 	 		 		&mt LC(LS(LALT)) SPC &kp LA(N1)  &kp RET	&alpha2macro	 	
+			 	 		 		&mt LC(LS(LALT)) SPC &key_repeat		&kp RET	&alpha2macro	 	
 		>;
 		};
        		alpha2 {
 		bindings = <
 		 	 		&kp V 		&kp W		&kp M	 	 	&kp F    	&kp COMMA		&kp Z 		
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT			&kp X		&kp Y 
-			 	 		 		&sk LSHIFT 	&none 			&sl AL1U 	&sl AL2U	
+		&kp Q	 	&kp J 		&kp P		&kp K 		&kp B 		&kp DOT			&kp X		&kp Y 
+			 	 		 		&kp LA(N1)	&none			&sl AL1U 	&sl AL2U	
 		>;
 		};
 		
@@ -175,7 +175,7 @@
 		bindings = <
 		 			&kp EXCL   			&kp AT			&kp HASH	    &kp LBRC		&kp RBRC		&kp COLON	
 		&kp TAB		&td LA(N2) DLLR		&kp PRCNT      	&kp CARET	 	&kp DOT			&kp AMPS	 	&kp SEMI 	&td UNDER MINUS
-				  						&kp LGUI  		&kp LG(LA(I))	&kp RET  		&kp RGUI
+				  						&kp LGUI  		&kp LA(LG(I))	&kp RET  		&kp RGUI
 		>;
 		};
 
@@ -183,7 +183,7 @@
 		bindings = <
 							&kp STAR		&kp LPAR	&kp RPAR		&kp LT			&kp GT 				&td SQT DQT
 		&td TILDE GRAVE  	&td BSLH PIPE	&kp LBKT	&kp RBKT   		&kp EQUAL  		&td FSLH QMARK		&kp MINUS		&kp UNDER 
-		 		                			&trans  	&kp LG(LA(I))  	&kp RET  		&kp RGUI
+		 		                			&trans  	&kp LA(LG(I))  	&kp RET  		&kp RGUI
 
 		>;
 		};
